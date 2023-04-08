@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Button?</title>
+    <script defer>
+      function click() {
+        var randomNum = Math.floor(Math.random() * 5) + 1;
+        if (randomNum == 1) {
+          document.getElementById("quote").innerHTML = `
+                    <strong>Charles: </strong> Hey, what do you want to eat?
+                    <br>
+                    <strong>Beetlejuice: </strong> THE SOULS OF THE INNOCENT!
+                    <br>
+                    <strong>Lydia: </strong> A bagel.
+                    <br>
+                    <strong>Beetlejuice: </strong> NOOOOOO!
+                    <br>
+                    <strong>Lydia: </strong> Two bagels.
+                `;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <label id="quote"></label>
+    <br />
+    <br />
+    <button
+      onclick="var randomNum = Math.floor(Math.random() * 2) + 1;if (randomNum == 1) {document.getElementById('quote').innerHTML = `<strong>Charles: </strong> Hey, what do you want to eat?<br><strong>Beetlejuice: </strong> THE SOULS OF THE INNOCENT!<br><strong>Lydia: </strong> A bagel.<br><strong>Beetlejuice: </strong> NOOOOOO!<br><strong>Lydia: </strong> Two bagels.`} else if (randomNum == 2) {document.getElementById('quote').innerHTML = `<strong>Lydia: </strong> I should've left you on that street corner where I found you.<br><strong>Beetlejuice: </strong> But ya DIDN'T!<br>`}"
+    >
+      Generate An Incorrect Quote from Beetlejuice
+    </button>
+  </body>
+</html>
